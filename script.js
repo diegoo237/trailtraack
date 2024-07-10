@@ -51,6 +51,7 @@ class Running extends Workout {
     this.calcPace();
     this._setDescription();
   }
+
   calcPace() {
     this.pace = this.duration / this.distance;
     return this.pace;
@@ -297,7 +298,7 @@ class App {
       this._renderWorkout(work);
     });
   }
-
+  //reset memory
   reset() {
     localStorage.removeItem('workouts');
     location.reload();
